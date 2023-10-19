@@ -7,15 +7,14 @@ public class Cliente {
     private int clienteid;
     private String name;
 
-    private String email;
-
     private String cpf;
+    private int id_Endereco;
 
-    public cliente(int clienteid, String name, String email, String cpf) {
+    public Cliente(int clienteid, String name, String cpf, int id_Endereco) {
         this.clienteid = clienteid;
         this.name = name;
-        this.email = email;
         this.cpf= cpf;
+        this.id_Endereco = id_Endereco;
     }
 
     public int getClienteid() {
@@ -26,8 +25,12 @@ public class Cliente {
         this.clienteid = clienteid;
     }
 
-    public void setId(clienteid) {
-        this.clienteid = clienteid;
+    public int getId_Endereco() {
+        return id_Endereco;
+    }
+
+    public void setId_Endereco(int id_Endereco) {
+        this.id_Endereco = id_Endereco;
     }
 
     public String getName() {
@@ -36,14 +39,6 @@ public class Cliente {
 
     public void setName(String name) {
         this.name = name;
-    }
-
-    public String getEmail() {
-        return email;
-    }
-
-    public void setEmail(String email) {
-        this.email = email;
     }
 
     public String getCpf() {
