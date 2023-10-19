@@ -2,12 +2,12 @@ package model.entities;
 
 public class Gerente extends Usuario{
     private int id_Gerente;
-    private int id_Empresa;
+    private Empresa empresa;
 
-    public Gerente(int id_Gerente, int id_Empresa, String login, String senha, String nome, int nivelAcesso) {
+    public Gerente(int id_Gerente, Empresa empresa, String login, String senha, String nome, int nivelAcesso) {
         super(login, senha, nome, nivelAcesso);
         this.id_Gerente = id_Gerente;
-        this.id_Empresa = id_Empresa;
+        this.empresa = empresa;
     }
 
     public int getId_Gerente() {
@@ -18,11 +18,11 @@ public class Gerente extends Usuario{
         this.id_Gerente = id_Gerente;
     }
 
-    public int getId_Empresa() {
-        return id_Empresa;
+    public Empresa getEmpresa() {
+        return empresa;
     }
 
-    public void setId_Empresa(int id_Empresa) {
-        this.id_Empresa = id_Empresa;
+    public void setEmpresa(Empresa empresa) {
+        this.empresa = empresa;
     }
 }

@@ -1,53 +1,18 @@
 package model.entities;
 
 public class Cliente {
-
-
-
-    private int clienteid;
+    private int id_Cliente;
     private String name;
-
     private String cpf;
-    private int id_Endereco;
+    private Endereco endereco;
 
-    public Cliente(int clienteid, String name, String cpf, int id_Endereco) {
-        this.clienteid = clienteid;
+    public Cliente() {
+    }
+
+    public Cliente(int id_Cliente, String name, String cpf, Endereco endereco) {
+        this.id_Cliente = id_Cliente;
         this.name = name;
-        this.cpf= cpf;
-        this.id_Endereco = id_Endereco;
-    }
-
-    public int getClienteid() {
-        return clienteid;
-    }
-
-    public void setClienteid(int clienteid) {
-        this.clienteid = clienteid;
-    }
-
-    public int getId_Endereco() {
-        return id_Endereco;
-    }
-
-    public void setId_Endereco(int id_Endereco) {
-        this.id_Endereco = id_Endereco;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public String getCpf() {
-        return cpf;
-    }
-
-    public void setCpf(String cpf) {
         this.cpf = cpf;
+        this.endereco = endereco;
     }
 }
-
-

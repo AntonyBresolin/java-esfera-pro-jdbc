@@ -1,28 +1,30 @@
 package model.entities;
 
+import java.util.ArrayList;
+
 public class Contato {
     private int id_Contato;
     private int tipoContato;
     private String valor;
-    private int id_Cliente;
+    private ArrayList<Cliente> clientes;
 
 
     public Contato() {
     }
 
-    public Contato(int id_Contato, int tipoContato, String valor, int id_Cliente) {
+    public Contato(int id_Contato, int tipoContato, String valor, ArrayList<Cliente> clientes) {
         this.id_Contato = id_Contato;
         this.tipoContato = tipoContato;
         this.valor = valor;
-        this.id_Cliente = id_Cliente;
+        this.clientes = clientes;
     }
 
-    public int getId_Cliente() {
-        return id_Cliente;
+    public ArrayList<Cliente> getClientes() {
+        return clientes;
     }
 
-    public void setId_Cliente(int id_Cliente) {
-        this.id_Cliente = id_Cliente;
+    public void setClientes(ArrayList<Cliente> clientes) {
+        this.clientes = clientes;
     }
 
     public int getId_Contato() {
