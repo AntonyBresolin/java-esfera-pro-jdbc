@@ -3,16 +3,26 @@ package model.entities;
 public class Contato {
     private int id_Contato;
     private int tipoContato;
-    private String Valor;
+    private String valor;
+    private int id_Cliente;
 
 
     public Contato() {
     }
 
-    public Contato(int id_Contato, int tipoContato, String valor) {
+    public Contato(int id_Contato, int tipoContato, String valor, int id_Cliente) {
         this.id_Contato = id_Contato;
         this.tipoContato = tipoContato;
-        Valor = valor;
+        this.valor = valor;
+        this.id_Cliente = id_Cliente;
+    }
+
+    public int getId_Cliente() {
+        return id_Cliente;
+    }
+
+    public void setId_Cliente(int id_Cliente) {
+        this.id_Cliente = id_Cliente;
     }
 
     public int getId_Contato() {
@@ -32,10 +42,10 @@ public class Contato {
     }
 
     public String getValor() {
-        return Valor;
+        return valor;
     }
 
     public void setValor(String valor) {
-        Valor = valor;
+        this.valor = valor;
     }
 }
