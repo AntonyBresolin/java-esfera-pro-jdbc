@@ -11,12 +11,12 @@ public class Proposta {
     private String status;
     private String resposta;
     private String observacao;
-    private int id_vendedor;
+    private Vendedor vendedor;
 
     public Proposta() {
     }
 
-    public Proposta(int id_Proposta, Double valor, Date data, String nome, String descricao, String status, String resposta, String observacao, int id_vendedor) {
+    public Proposta(int id_Proposta, Double valor, Date data, String nome, String descricao, String status, String resposta, String observacao, Vendedor vendedor) {
         this.id_Proposta = id_Proposta;
         this.valor = valor;
         this.data = data;
@@ -25,7 +25,7 @@ public class Proposta {
         this.status = status;
         this.resposta = resposta;
         this.observacao = observacao;
-        this.id_vendedor = id_vendedor;
+        this.vendedor = vendedor;
     }
 
     public int getId_Proposta() {
@@ -92,11 +92,11 @@ public class Proposta {
         this.observacao = observacao;
     }
 
-    public int getId_vendedor() {
-        return id_vendedor;
+    public Vendedor getVendedor() {
+        return vendedor;
     }
 
-    public void setId_vendedor(int id_vendedor) {
-        this.id_vendedor = id_vendedor;
+    public void setVendedor(Vendedor vendedor) {
+        this.vendedor = vendedor;
     }
 }
