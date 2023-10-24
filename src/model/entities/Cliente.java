@@ -15,4 +15,36 @@ public class Cliente {
         this.cpf = cpf;
         this.endereco = endereco;
     }
+
+    public int getId_Cliente() {
+        return id_Cliente;
+    }
+
+    public void setId_Cliente(int id_Cliente) {
+        this.id_Cliente = id_Cliente;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getCpf() {
+        return cpf;
+    }
+
+    public void setCpf(String cpf) {
+        this.cpf = cpf;
+    }
+
+    public Endereco getEndereco() {
+        return endereco;
+    }
+
+    public void setEndereco(Endereco endereco) {
+        this.endereco = endereco;
+    }
 }
